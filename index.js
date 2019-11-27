@@ -48,6 +48,17 @@ app.post('/user', urlEncoded, (req, res) => {
     });
 });
 
+app.put('/user/:id', urlEncoded, (req, res) => {
+    User.updateOne({_id:req.params.id},{
+        name: req.body.name,
+        age: req.body.age
+    }, (err, data) => {
+        if(err) res.json({msg:'Invalid request'});
+            res.json(data);
+    });
+});
+
+
 app.delete('/user/:id', (req, res) => {
     User.deleteOne({_id:req.params.id},(err,data) => {
     if(err) res.json({msg:'Invalid Request'});

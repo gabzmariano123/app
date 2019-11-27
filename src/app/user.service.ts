@@ -13,7 +13,7 @@ export class UserService {
   
 
 getUser(): Observable<User[]> {
-  return this.http.get<User[]>('/users');
+  return this.http.get<User[]>('/user');
 }
 
 addUser(user:User):Observable<User>{
