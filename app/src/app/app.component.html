@@ -1,0 +1,51 @@
+<html>
+  <title> </title>
+  
+<body>
+  <div>
+    <div class="container">
+      <h1 class="header" style="text-align:center">Gabriel A. Mariano</h1>
+      <form (submit)="addUser()" class="form"><br>
+          <label>Name:  </label> <br>
+          <input type="text" 
+          #name="ngModel" 
+          [(ngModel)]="userName" 
+          name="userName" 
+          [class.invalid]="name.invalid && name.touched" 
+          class="form-control form-control-sm"
+          required> <br>
+        
+          <label>Age: </label> <br>
+          <input type="number"
+          #age="ngModel" 
+          [(ngModel)]="userAge" 
+          name="userAge"
+          [class.invalid]="age.invalid && age.touched" 
+            class="form-control form-control-sm"
+          required> <br><br>
+          
+          <input type="submit" value="Add Student"  class="submiButton"/>
+      </form>  
+    </div>
+  </div>
+<br>  
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Action</th>
+    </tr>
+
+    <tr *ngFor="let user of users">
+        
+        <td> {{ user.name }} </td>
+        <td> {{ user.age }} </td>  
+        <td> 
+            <button (click)="updateUser(user._id)" class="update"> Update </button>
+            <button (click)="deleteUser(user._id)" class="delete"> Delete </button> 
+        </td>
+    </tr>
+  </table>
+
+</body>
+</html>

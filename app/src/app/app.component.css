@@ -1,0 +1,119 @@
+.invalid {
+    border: 1px solid red;
+}
+
+label{
+    color: white;
+}
+body{
+    background-color: teal;
+    width: 640px;
+    margin-left: 400px;
+}
+
+.delete{
+    background-color: red;
+}
+
+.update{
+    background-color: yellow;
+}
+
+
+button{
+    margin-top: 5px;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 5px;
+    height: 35px;   
+  
+}
+
+
+input{
+    margin-top: 2px;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 5px;
+    height: 35px;
+}
+
+label,input{
+    margin-left: 35px;
+}
+
+table{
+    overflow: scroll;
+    height: 40px;
+}
+
+a{
+	margin-right: 10px;
+}
+
+#eg img:hover{
+  background-color: red;
+  padding: 5px; border: red 1px solid;
+}
+
+img {
+  border-radius: 50%;
+  margin-left: 6px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+  text-align: left;
+}
+
+tr:nth-child(even) {background-color: #f1f1f1;}
+tr:nth-child(odd) {background-color: #f9f9f9;}
+
+* {box-sizing: border-box;}
+
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+  }
